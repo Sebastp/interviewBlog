@@ -3,12 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <Link to={'/'}>
       <img src={require('@images/logo.svg')} id="tpb-logoi" alt="logo1"/>
     </Link>

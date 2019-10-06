@@ -1,0 +1,50 @@
+#landingTopImage{
+  width: 100%;
+  display: block;
+  position: relative;
+
+  &-onion{
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+
+  &-guy{
+    max-height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+
+.landing-main{
+  width: 100%;
+  margin-top: 130px;
+  display: block;
+}
+
+
+
+// =====================================================
+//    MEDIA QUERIES
+// =====================================================
+// Small
+@media (min-width: 544px) {
+}
+// Medium
+@media (max-width: 768px) {
+}
+ // Large
+@media (max-width: 992px) {
+}
+// Extra large
+@media (max-width: 1225px) {
+}

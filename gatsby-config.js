@@ -5,6 +5,21 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@assets": "src/assets",
+          "@pages": "src/pages",
+          "@images": "src/images"
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {

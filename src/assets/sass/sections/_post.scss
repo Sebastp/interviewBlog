@@ -1,0 +1,60 @@
+.post{
+  &-kicker{
+
+  }
+  &-title{
+
+  }
+  &-subtitle{
+
+  }
+  &-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .post-captions{
+      .middotDivider{
+        padding: 0 0.3rem;
+        :after{
+          content: '\00B7';
+        }
+      }
+    }
+
+    .post-tag{
+
+    }
+  }
+}
+
+
+.post-article1{
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: left;
+}
+
+
+
+
+
+
+// =====================================================
+//    MEDIA QUERIES
+// =====================================================
+// Small
+@media (min-width: 544px) {
+}
+// Medium
+@media (max-width: 768px) {
+}
+ // Large
+@media (max-width: 992px) {
+}
+// Extra large
+@media (max-width: 1225px) {
+}

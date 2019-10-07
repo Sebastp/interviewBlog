@@ -7,7 +7,7 @@
   font-size: 14px;
   padding: 10px 35px;
   font-family: $sourceSansPro;
-  font-weight: $medium;
+  font-weight: $semi-bold;
   color: rgba($dark1, 0.85);
   transition: color 0.25s;
   white-space: nowrap;
@@ -43,5 +43,24 @@
       opacity: 0.3;
       transition: opacity 0.2s;
     }
+  }
+}
+
+
+
+
+.colorBtn{
+  border-radius: 4px;
+  padding: 6px 20px;
+  text-align: center;
+  display: inline-block;
+  font-family: $sourceSansPro;
+  font-weight: $medium;
+  cursor: pointer;
+
+
+  &__blue{
+    color: $BRblue;
+    background-color: rgba($BRblue__light, 0.7);
   }
 }

@@ -6,13 +6,18 @@
 // @import 'sections/*';
 // @import 'pages/*';
 
+//[------
 @import 'core/__fonts';
 @import 'core/__variables';
 
-
-@import 'sections/_index';
-
-
 @import 'tools/_normalize';
+//-----]
+
+
 
 @import 'core/_base';
+@import 'core/_buttons';
+
+
+@import 'sections/_index';
+@import 'sections/_footer';

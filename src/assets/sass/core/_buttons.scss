@@ -1,0 +1,47 @@
+.btn-line__ghost{
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid $grey1;
+  background-color: none;
+  font-size: 14px;
+  padding: 10px 35px;
+  font-family: $sourceSansPro;
+  font-weight: $medium;
+  color: rgba($dark1, 0.85);
+  transition: color 0.25s;
+  white-space: nowrap;
+
+  &:hover{
+    color: rgba($dark1, 0.95);
+    transition: color 0.4s;
+  }
+
+  .btn-icon{
+    height: 13px;
+    margin-right: 10px
+  }
+}
+
+
+.button-scm{
+  height: 21px;
+  width: auto;
+  display: inline-block;
+
+  img{
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    margin: auto;
+    transition: opacity 0.2s;
+    height: 100%;
+
+    &:hover{
+      opacity: 0.3;
+      transition: opacity 0.2s;
+    }
+  }
+}

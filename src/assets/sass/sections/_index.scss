@@ -25,10 +25,38 @@
 }
 
 
-.landing-main{
-  width: 100%;
-  margin-top: 130px;
-  display: block;
+#landingMainCont{
+  flex: 1;
+
+  header{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+
+    .landingMainCont-mainHeader{
+      width: 100%;
+      display: inline-block;
+      margin-top: 20px;
+
+      h2{
+        display: block;
+        font-family: $poppins;
+        font-weight: $medium;
+        color: rgba($grey2, 0.75);
+        font-size: 1.313rem;
+        span{
+          color: $black;
+          margin-left: 9px;
+        }
+      }
+    }
+  }
+
+  .landing-main{
+    width: 100%;
+    margin-top: 130px;
+    display: block;
+  }
 }
 
 

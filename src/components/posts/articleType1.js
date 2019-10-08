@@ -2,16 +2,20 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+
+import ButtonColor from "@components/buttonColor"
+
+
 const ArticleType1 = ({ kicker, title, subtitle, createdData, readTime, keywords, tag }) => (
-  <div className="post-article1">
+  <article className="post-article1">
     <span className="post-kicker">
       {kicker}
     </span>
-    <h4 className="post-title">
+    <h2 className="post-title">
       {title}
-    </h4>
+    </h2>
     <p className="post-subtitle">
-      {title}
+      {subtitle}
     </p>
 
     <div className="post-footer">
@@ -22,12 +26,12 @@ const ArticleType1 = ({ kicker, title, subtitle, createdData, readTime, keywords
       </div>
 
       <div className="post-tag">
-        <Link className="colorBtn colorBtn__blue">
+        <ButtonColor>
           {tag}
-        </Link>
+        </ButtonColor>
       </div>
     </div>
-  </div>
+  </article>
 )
 
 ArticleType1.propTypes = {

@@ -13,10 +13,16 @@ body {
   max-width: 100vw;
 
   ::selection {
-    background: rgba($brandCol1, 0.7);
+    background: rgba($dark2, 0.2);
   }
 }
 
+hr{
+  border-top: none;
+  background-color: $grey1;
+  height: 1px;
+  width: 100%;
+}
 
 #index{
   display: flex;
@@ -39,9 +45,9 @@ body {
 
 .grid-col-left{
   display: inline-block;
-  max-width: 231px;
+  width: 231px;
   position: relative;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .grid-col-center{

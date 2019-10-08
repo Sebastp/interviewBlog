@@ -5,8 +5,8 @@
 $black: #000000;
 $white: #ffffff;
 
-$brandCol1: #000000;
 
+$purple1: #35006f;
 
 $dark1: #000a1e;//ghost buttons text
 $dark2: #15002e;//titles, headers
@@ -20,8 +20,20 @@ $grey2: #858e92;//main header text col
 
 //brand Colors
 
+$BRgreen: #01b24b;
+$BRgreen__light: #cef4de ;
+
 $BRblue: #017ce4;
 $BRblue__light: #cce5fa;
+
+$BRpurple: #5f00dd;
+$BRpurple__light: #dfccf8;
+
+$BRred: #ea0b74;
+$BRred__light: #fbcee3;
+
+$BRyellow: #cbac00;
+$BRyellow__light: #faf4d0;
 
 
 
@@ -41,3 +53,9 @@ $medium: 500;
 $semi-bold: 600;
 $bold: 700;
 $superBold: 800;
+
+
+/*letter spacing
+10 = 0.01em
+20 = 0.02em
+*/

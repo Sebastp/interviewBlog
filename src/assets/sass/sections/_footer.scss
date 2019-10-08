@@ -2,6 +2,8 @@ footer{
   width: 100%;
   display: block;
   position: relative;
+  padding-bottom: 50px;
+  padding-top: 120px;
 
   .footer-top{
     display: flex;
@@ -23,12 +25,9 @@ footer{
       display: inline-block;
       height: 20px;
       width: auto;
-      opacity: 0.17;
-      margin-right: 18px;
-      transition: opacity 0.2s;
 
       .button-scm{
-        margin-right: 20px;
+        margin-right: 22px;
 
         &:last-child{
           margin-right: 0px;
@@ -37,16 +36,6 @@ footer{
 
       img{
         height: 100%;
-      }
-
-
-      &:hover{
-        opacity: 0.3;
-        transition: opacity 0.2s;
-      }
-
-      &:last-child{
-        margin-right: 0px !important;
       }
     }
   }
@@ -59,6 +48,20 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .metatext{
+      font-size: 13px;
+      color: $grey1;
+      font-family: $poppins;
+      font-weight: $medium;
+      color: rgba($dark1, 0.35);
+    }
+
+    .footer-law{
+      .button-text1:first-child{
+        margin-right: 20px;
+      }
+    }
   }
 }
 

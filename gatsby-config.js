@@ -13,7 +13,8 @@ module.exports = {
           "@components": "src/components",
           "@assets": "src/assets",
           "@pages": "src/pages",
-          "@images": "src/images"
+          "@images": "src/images",
+          "@helpers": "src/helpers"
         },
         extensions: [
           "js",

@@ -1,3 +1,25 @@
+.button-text{
+  font-family: $sourceSansPro;
+  font-weight: $semi-bold;
+  color: rgba($dark1, 0.85);
+  font-size: 14px;
+  transition: color 0.35s;
+
+
+  &:hover{
+    transition: color 0.25s;
+  }
+
+  &1{
+    @extend .button-text;
+    color: rgba($dark1, 0.55);
+    &:hover{
+      color: rgba($dark1, 0.75);
+    }
+  }
+}
+
+
 .btn-line__ghost{
   display: inline-block;
   cursor: pointer;
@@ -5,7 +27,7 @@
   border: 1px solid $grey1;
   background-color: none;
   font-size: 14px;
-  padding: 10px 35px;
+  padding: 9px 35px;
   font-family: $sourceSansPro;
   font-weight: $semi-bold;
   color: rgba($dark1, 0.85);
@@ -18,7 +40,9 @@
   }
 
   .btn-icon{
-    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
     margin-right: 10px
   }
 }
@@ -38,6 +62,7 @@
     margin: auto;
     transition: opacity 0.2s;
     height: 100%;
+    opacity: 0.17;
 
     &:hover{
       opacity: 0.3;
@@ -49,18 +74,56 @@
 
 
 
+
+
+//colors
+
+@mixin colorStyles($color, $color__light) {
+  @extend .colorBtn;
+
+  color: $color;
+  background-color: rgba($color__light, 0.7);
+  transition: background-color 0.25s;
+
+  &:hover{
+    background-color: rgba($color__light, 0.9);
+    transition: background-color 0.25s;
+    color: $color;
+  }
+}
+
 .colorBtn{
-  border-radius: 4px;
-  padding: 6px 20px;
   text-align: center;
   display: inline-block;
   font-family: $sourceSansPro;
-  font-weight: $medium;
+  font-weight: $semi-bold;
   cursor: pointer;
+  font-size: 13px;
+  border-radius: 5px;
+
+
+
+  &-inner{
+    display: block;
+    padding: 5px 28px;
+    height: 100%;
+    letter-spacing: 0.02em;
+  }
 
 
   &__blue{
-    color: $BRblue;
-    background-color: rgba($BRblue__light, 0.7);
+    @include colorStyles($BRblue, $BRblue__light);
+  }
+  &__green{
+    @include colorStyles($BRgreen, $BRgreen__light);
+  }
+  &__purple{
+    @include colorStyles($BRpurple, $BRpurple__light);
+  }
+  &__red{
+    @include colorStyles($BRred, $BRred__light);
+  }
+  &__yellow{
+    @include colorStyles($BRyellow, $BRyellow__light);
   }
 }

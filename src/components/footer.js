@@ -29,9 +29,9 @@ const Footer = ({ siteTitle }) => (
         </div>
       </div>
 
-      <div className="footer-top">
-        <span>© {new Date().getFullYear()}. All rights reserved</span>
-        <div>
+      <div className="footer-bottom">
+        <span className="metatext">© {new Date().getFullYear()}. All rights reserved</span>
+        <div className="footer-law">
           <Link to={'/'} className="button-text1">
             Privacy Policy
           </Link>

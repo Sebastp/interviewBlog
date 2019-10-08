@@ -43,7 +43,7 @@
         font-family: $poppins;
         font-weight: $medium;
         color: rgba($grey2, 0.75);
-        font-size: 1.313rem;
+        font-size: 1.25rem;
         span{
           color: $black;
           margin-left: 9px;
@@ -52,10 +52,36 @@
     }
   }
 
+
+  .grid-col-left{
+    .left-categories{
+      width: 100%;
+      display: block;
+      margin-bottom: 40px;
+
+      .descriptiveSpan{
+        margin-bottom: 20px;
+        
+      }
+    }
+  }
+
   .landing-main{
     width: 100%;
     margin-top: 130px;
     display: block;
+
+    .post-article1{
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      &:first-child{
+        padding-top: 0px;
+      }
+      &:last-child{
+        padding-bottom: 0px;
+      }
+    }
   }
 }
 

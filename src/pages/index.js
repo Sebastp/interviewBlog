@@ -37,20 +37,28 @@ const IndexPage = () => (
         <div className="grid-col-left">
           <nav className="left-categories">
             <span className="descriptiveSpan">Categories</span>
+
             <ul>
-              {categoriesKeys.map((catTitle, k)=>(
-                <li key={k} className="categories-li">
-                  <Link to={'/'} className="categories-li-inner">
-                    <div className={categoriesKeys[catTitle][className]}>
-                      <img src={require('@images/'+iconName+'.svg')}/>
-                    </div>
-                    {catTitle}
-                  </Link>
-                  {(k-1!==categoriesKeys.length&&<hr/>)}
-                </li>
-              )
+              {categoriesKeys.map((catTitle, k)=>{
+                let {title, iconName, className} = categoriesObj[catTitle]
+
+                return(
+                  <li key={k} className="categories-li">
+                    <Link to={'/'} className="categories-li-inner">
+                      <div className={'categories-li-icon '+className}>
+                        <img src={
+                          require('@images/icons/'+iconName)
+                        }/>
+                      </div>
+                      {title}
+                    </Link>
+                    {(k+1!=categoriesKeys.length && <hr/>)}
+                  </li>
+                )
+              }
             )}
             </ul>
+
           </nav>
         </div>
 

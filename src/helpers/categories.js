@@ -1,9 +1,9 @@
 export const categoriesObj = {
-  'trading': {className: 'colorBtn__green', iconName: 'cat-bars.svg'},
-  'e-commerce': {className: 'colorBtn__purple', iconName: 'cat-bag.svg'},
-  'marketing': {className: 'colorBtn__red', iconName: 'cat-hash.svg'},
-  'startup': {className: 'colorBtn__blue', iconName: 'cat-layout.svg'},
-  'investing': {className: 'colorBtn__yellow', iconName: 'cat-chart.svg'},
+  'trading': {title: 'Trading', className: 'colorBtn__green', iconName: 'cat-bars.svg'},
+  'e-commerce': {title: 'E-Commerce', className: 'colorBtn__purple', iconName: 'cat-bag.svg'},
+  'marketing': {title: 'Marketing', className: 'colorBtn__red', iconName: 'cat-hash.svg'},
+  'startup': {title: 'Startup', className: 'colorBtn__blue', iconName: 'cat-layout.svg'},
+  'investing': {title: 'Investing', className: 'colorBtn__yellow', iconName: 'cat-chart.svg'},
 }
 
 export const categoriesKeys = Object.keys(categoriesObj);
